@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white border-b border-zinc-200">
-      <div className=" mx-auto px-4 flex items-center justify-between h-14">
+      <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-14">
         {/* Logo */}
         <a href="/" className="text-xl font-bold text-zinc-900">
           Orbit <span className="text-amber-500">Daily</span>
