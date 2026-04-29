@@ -6,7 +6,6 @@ import BlogPost from './pages/BlogPost'
 function App() {
   return (
     <Router>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/post/:id" element={<BlogPost />} />

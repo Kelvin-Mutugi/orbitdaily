@@ -18,7 +18,7 @@ export default function BlogPost() {
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Post Not Found</h1>
           <p className="text-gray-600 mb-6">The post you're looking for doesn't exist.</p>
-          <Link to="/" className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded">
+          <Link to="/" className="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded">
             Back to All Stories
           </Link>
         </div>
@@ -33,7 +33,7 @@ export default function BlogPost() {
         <div className="px-4 py-4">
           <button
             onClick={() => navigate(-1)}
-            className="text-red-600 hover:text-red-700 font-semibold mb-4 flex items-center gap-2"
+            className="text-gray-600 hover:text-gray-700 font-semibold mb-4 flex items-center gap-2"
           >
             ← Back to Stories
           </button>
@@ -55,7 +55,7 @@ export default function BlogPost() {
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           {/* Category Badge */}
           <div className="mb-4">
-            <span className="bg-red-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+            <span className="bg-gray-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
               {post.category}
             </span>
           </div>
@@ -114,7 +114,7 @@ export default function BlogPost() {
                 className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
               >
                 <p className="text-gray-600 text-sm mb-2">← Previous Story</p>
-                <h3 className="text-lg font-bold text-gray-800 hover:text-red-600 line-clamp-2">
+                <h3 className="text-lg font-bold text-gray-800 hover:text-gray-600 line-clamp-2">
                   {previousPost.title}
                 </h3>
               </Link>
@@ -125,7 +125,7 @@ export default function BlogPost() {
                 className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
               >
                 <p className="text-gray-600 text-sm mb-2 text-right">Next Story →</p>
-                <h3 className="text-lg font-bold text-gray-800 hover:text-red-600 line-clamp-2">
+                <h3 className="text-lg font-bold text-gray-800 hover:text-gray-600 line-clamp-2">
                   {nextPost.title}
                 </h3>
               </Link>
@@ -137,7 +137,7 @@ export default function BlogPost() {
         <div className="text-center">
           <Link
             to="/"
-            className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded transition-colors inline-block"
+            className="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-8 rounded transition-colors inline-block"
           >
             Back to All Stories
           </Link>

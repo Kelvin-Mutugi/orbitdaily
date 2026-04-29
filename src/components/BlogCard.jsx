@@ -12,7 +12,7 @@ export default function BlogCard({ post }) {
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute top-3 left-3">
-          <span className="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+          <span className="bg-gray-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
             {post.category}
           </span>
         </div>
@@ -21,7 +21,7 @@ export default function BlogCard({ post }) {
       {/* Content Container */}
       <div className="p-4 flex flex-col flex-grow">
         {/* Title */}
-        <h3 className="text-lg font-bold text-gray-800 mb-2 line-clamp-2 hover:text-red-600 transition-colors">
+        <h3 className="text-lg font-bold text-gray-800 mb-2 line-clamp-2 hover:text-gray-600 transition-colors">
           {post.title}
         </h3>
 
@@ -39,7 +39,7 @@ export default function BlogCard({ post }) {
         {/* Read More Button */}
         <Link
           to={`/post/${post.id}`}
-          className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded transition-colors duration-200 text-center"
+          className="w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded transition-colors duration-200 text-center"
         >
           Read Full Story →
         </Link>
