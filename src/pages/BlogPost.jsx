@@ -41,7 +41,7 @@ export default function BlogPost() {
       </div>
 
       {/* Main Content */}
-      <div className="px-4 py-8 max-w-5xl mx-auto">
+      <div className="px-4 py-8 max-w-7xl mx-auto">
         {/* Featured Image */}
         <div className="rounded-lg overflow-hidden shadow-lg mb-8 h-96">
           <img
@@ -53,12 +53,12 @@ export default function BlogPost() {
 
         {/* Post Header */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          {/* Category Badge */}
+          {/* Category Badge 
           <div className="mb-4">
             <span className="bg-gray-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
               {post.category}
             </span>
-          </div>
+          </div> */}
 
           {/* Title */}
           <h1 className="text-4xl font-bold text-gray-800 mb-4">{post.title}</h1>
